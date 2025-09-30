@@ -1,0 +1,28 @@
+@use './reset.scss';
+@use './variables/global.scss';
+@use './themes/dark.scss';
+@use './themes/light.scss';
+
+.app {
+  font: var(--font-m);
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+.content-page {
+  display: flex;
+}
+
+.page {
+  flex-grow: 1;
+  padding: 20px;
+}
