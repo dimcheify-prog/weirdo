@@ -15,6 +15,7 @@ export const App = () => {
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
+          <div></div>
           <Sidebar />
           <AppRouter />
         </div>
