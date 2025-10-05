@@ -6,6 +6,7 @@ import { Navbar } from '@/widgets/Navbar';
 import { Sidebar } from '@/widgets/Sidebar';
 import '@/shared/config/i18n/i18n';
 import { Suspense } from 'react';
+import { BugButton } from './providers/ErrorBoundary';
 
 export const App = () => {
   const { theme } = useTheme();
@@ -15,7 +16,6 @@ export const App = () => {
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
-          <div></div>
           <Sidebar />
           <AppRouter />
         </div>

@@ -34,6 +34,7 @@ export default defineConfig([
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
       'i18next/no-literal-string': 'warn',
+      'max-len': ['error', { ignoreComments: true, code: 85 }],
     },
   },
 ]);
